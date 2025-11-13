@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Showdown Chat Hider",
+  "version": "1.0",
+  "description": "Removes opponent chat messages from Pokemon Showdown battles.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["*://play.pokemonshowdown.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
